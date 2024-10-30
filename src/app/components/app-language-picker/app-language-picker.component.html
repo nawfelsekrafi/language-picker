@@ -1,0 +1,19 @@
+<div class="app-language-picker">
+    <div class="content">
+        <h2>Hi, thanks for visiting Textee 🎊
+        </h2>
+        <p>
+            You may want to switch the app language to your local language :
+        </p>
+        <select name="languages" id="languages" (change)="onLanguageChange($event)">
+            <option value="en">English 🇬🇧</option>
+            <option value="cz">Czech 🇨🇿</option>
+        </select>
+    </div>
+
+    <div class="actions">
+        <button mat-raised-button color="primary" (click)="onCancel()">Cancel</button>
+        <button mat-raised-button color="primary" (click)="onSave()">Save</button>
+    </div>
+
+</div>
