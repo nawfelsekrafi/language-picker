@@ -6,8 +6,8 @@
             You may want to switch the app language to your local language :
         </p>
         <select name="languages" id="languages" (change)="onLanguageChange($event)">
-            <option value="en">English 🇬🇧</option>
-            <option value="cz">Czech 🇨🇿</option>
+            <option value="en" [selected]="selectedLanguage === 'en'">English 🇬🇧</option>
+            <option value="cz" [selected]="selectedLanguage === 'cz'">Czech 🇨🇿</option>
         </select>
     </div>
 
